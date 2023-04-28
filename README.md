@@ -25,7 +25,7 @@ Question 1 is from Level 1
     - rev_print
     - rot_13 ✅
     - rotone
-    - search_and_replace
+    - search_and_replace ✅
     - ulstr
 
 Question 2 is from Level 2
@@ -36,7 +36,7 @@ Question 2 is from Level 2
     - camel_to_snake
     - do_op
     - ft_atoi ✅
-    - ft_strcmp
+    - ft_strcmp ✅
     - ft_strcspn
     - ft_strdup
     - ft_strpbrk
