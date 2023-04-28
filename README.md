@@ -69,7 +69,7 @@ Question 3 is from Level 3
     - paramsum
     - pgcd
     - print_hex
-    - rstr_capitalizer
+    - rstr_capitalizer ✅
     - str_capitalizer
     - tab_mult 
 
