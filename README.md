@@ -151,3 +151,16 @@ My Skills
 Exam Practice
 
 Practice the exam just like you would in the real exam using this tool - https://github.com/JCluzet/42_EXAM
+
+👓 CHEAT code :
+
+(sorry don't work in exam at 42)
+
+<code> remove_grade_time </code> : remove grade time between two push
+
+  > The maximum time to complete the exam is only information. 
+  Here, the exercise can always be corrected even after the time limit.
+
+<code> force_success </code> : force an exercice to success
+
+<code> new_ex </code> : generate a new exercice on the same level
