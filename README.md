@@ -40,11 +40,11 @@ Question 2 is from Level 2
     - ft_strcspn
     - ft_strdup
     - ft_strpbrk
-    - ft_strrev
+    - ft_strrev ✅
     - ft_strspn
     - inter
     - is_power_of_2
-    - last_word
+    - last_word ✅
     - max
     - print_bits
     - reverse_bits
