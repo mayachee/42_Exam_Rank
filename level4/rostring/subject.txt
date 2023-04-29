@@ -1,5 +1,5 @@
 Assignment name  : rostring
-Expected files   : c.c
+Expected files   : rostring.c
 Allowed functions: write, malloc, free
 --------------------------------------------------------------------------------
 

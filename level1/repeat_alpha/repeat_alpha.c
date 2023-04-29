@@ -29,6 +29,7 @@ void repeat_alpha(char *av)
         i++;
     }
 }
+
 int main(int ac, char **av)
 {
     if (ac == 2)
