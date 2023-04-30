@@ -77,8 +77,8 @@ Question 4 is from Level 4
 
 ❓ Any of the 10 Functions/Programs Below:
 
-    - flood_fill
-    - fprime
+    - flood_fill 🚷
+    - fprime ✅
     - ft_itoa
     - ft_list_foreach 🛑
     - ft_list_remove_if 🛑
