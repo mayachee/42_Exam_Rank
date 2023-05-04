@@ -17,10 +17,10 @@ Question 1 is from Level 1
 
     - first_word ✅
     - fizzbuzz ✅
-    - ft_strcpy
+    - ft_strcpy ✅
     - ft_strlen ✅
-    - ft_swap
-    - putstr
+    - ft_swap ✅
+    - putstr ✅
     - repeat_alpha
     - rev_print
     - rot_13 ✅
@@ -43,13 +43,13 @@ Question 2 is from Level 2
     - ft_strrev ✅
     - ft_strspn
     - inter
-    - is_power_of_2
+    - is_power_of_2 ✅
     - last_word ✅
-    - max
+    - max ✅
     - print_bits
     - reverse_bits
     - snake_to_camel
-    - swap_bits
+    - swap_bits ✅
     - union
     - wdmatch 
 
