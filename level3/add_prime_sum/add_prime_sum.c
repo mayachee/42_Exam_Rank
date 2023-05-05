@@ -12,22 +12,29 @@ int ft_atoi(char *nbr)
     }
     return n;
 }
-
-void    ft_putstr(int nbr)
+void	ft_putchar(char c)
 {
-    int i = 0;
-    char *str = "0123456789";
-
-    if (nbr > 10)
+	write(1, &c, 1);
+}
+void    ft_putstr(unsigned int	nbr)
+{
+    char i;
+    if (nbr >= 10)
+    {
+        ft_putstr(nbr / 10);
         ft_putstr(nbr % 10);
-    write(1, &str[nbr / 10], 10);
-    printf("\n");
+    }
+    i = nbr + 48;
+    write(1, &(i), 1);
 }
 void    add_prime_sum(char *av)
 {
     int i = 2;
 
     int nbr = ft_atoi(av);
+    printf("dddd");
+    ft_putstr(100);
+    printf("\n");
     if (nbr < 2)
         write(1, "0", 1);
     else{
@@ -43,7 +50,6 @@ void    add_prime_sum(char *av)
 
 int main(int ac, char **av)
 {
-    ft_putstr(10);
     if (ac == 1)
         write(1, "0", 1);
     if (ac == 2)
