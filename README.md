@@ -46,7 +46,7 @@ Question 2 is from Level 2
     - is_power_of_2 ✅
     - last_word ✅
     - max ✅
-    - print_bits
+    - print_bits ✅
     - reverse_bits
     - snake_to_camel
     - swap_bits ✅
@@ -58,12 +58,12 @@ Question 3 is from Level 3
 ❓ Any of the 15 Functions/Programs Below:
 
     - add_prime_sum
-    - epur_str
-    - expand_str
+    - epur_str ✅
+    - expand_str ✅
     - ft_atoi_base
     - ft_list_size
     - ft_range
-    - ft_rrange
+    - ft_rrange ✅
     - hidenp
     - lcm
     - paramsum
