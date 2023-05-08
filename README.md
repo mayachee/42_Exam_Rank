@@ -21,7 +21,7 @@ Question 1 is from Level 1
     - ft_strlen ✅
     - ft_swap ✅
     - putstr ✅
-    - repeat_alpha
+    - repeat_alpha waiting list ♻️
     - rev_print
     - rot_13 ✅
     - rotone
@@ -60,17 +60,17 @@ Question 3 is from Level 3
     - add_prime_sum
     - epur_str ✅
     - expand_str ✅
-    - ft_atoi_base
+    - ft_atoi_base ♻️
     - ft_list_size
-    - ft_range
+    - ft_range ♻️
     - ft_rrange ✅
     - hidenp
     - lcm
     - paramsum
     - pgcd
-    - print_hex
+    - print_hex ♻️
     - rstr_capitalizer ✅
-    - str_capitalizer
+    - str_capitalizer ♻️
     - tab_mult 
 
 Question 4 is from Level 4
