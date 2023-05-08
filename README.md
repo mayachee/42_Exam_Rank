@@ -21,12 +21,12 @@ Question 1 is from Level 1
     - ft_strlen ✅
     - ft_swap ✅
     - putstr ✅
-    - repeat_alpha waiting list ♻️
+    - repeat_alpha ✅
     - rev_print
     - rot_13 ✅
     - rotone
     - search_and_replace ✅
-    - ulstr
+    - ulstr ✅
 
 Question 2 is from Level 2
 
@@ -68,7 +68,7 @@ Question 3 is from Level 3
     - lcm
     - paramsum
     - pgcd
-    - print_hex ♻️
+    - print_hex ✅
     - rstr_capitalizer ✅
     - str_capitalizer ♻️
     - tab_mult 
