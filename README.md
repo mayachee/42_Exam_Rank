@@ -60,7 +60,7 @@ Question 3 is from Level 3
     - add_prime_sum
     - epur_str ✅
     - expand_str ✅
-    - ft_atoi_base ♻️
+    - ft_atoi_base ✅
     - ft_list_size
     - ft_range ♻️
     - ft_rrange ✅
