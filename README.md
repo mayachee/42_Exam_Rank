@@ -38,7 +38,7 @@ Question 2 is from Level 2
     - ft_atoi ✅
     - ft_strcmp ✅
     - ft_strcspn
-    - ft_strdup
+    - ft_strdup ✅
     - ft_strpbrk
     - ft_strrev ✅
     - ft_strspn
@@ -65,9 +65,9 @@ Question 3 is from Level 3
     - ft_range ♻️
     - ft_rrange ✅
     - hidenp
-    - lcm
-    - paramsum
-    - pgcd
+    - lcm ✅
+    - paramsum ✅
+    - pgcd ✅
     - print_hex ✅
     - rstr_capitalizer ✅
     - str_capitalizer ♻️
