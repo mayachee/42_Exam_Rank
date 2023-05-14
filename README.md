@@ -37,7 +37,7 @@ Question 2 is from Level 2
     - do_op
     - ft_atoi ✅
     - ft_strcmp ✅
-    - ft_strcspn
+    - ft_strcspn ✅
     - ft_strdup ✅
     - ft_strpbrk
     - ft_strrev ✅
