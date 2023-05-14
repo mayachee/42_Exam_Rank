@@ -22,7 +22,7 @@ Question 1 is from Level 1
     - ft_swap ✅
     - putstr ✅
     - repeat_alpha ✅
-    - rev_print
+    - rev_print ✅ 
     - rot_13 ✅
     - rotone
     - search_and_replace ✅
