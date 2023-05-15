@@ -70,7 +70,7 @@ Question 3 is from Level 3
     - pgcd ✅
     - print_hex ✅
     - rstr_capitalizer ✅
-    - str_capitalizer ♻️
+    - str_capitalizer ✅
     - tab_mult 
 
 Question 4 is from Level 4
