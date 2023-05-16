@@ -33,7 +33,7 @@ Question 2 is from Level 2
 ❓ Any of the 20 Functions/Programs Below:
 
     - alpha_mirror ✅
-    - camel_to_snake ✅ 
+    - camel_to_snake ✅
     - do_op ✅
     - ft_atoi ✅
     - ft_strcmp ✅
