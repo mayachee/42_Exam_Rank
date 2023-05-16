@@ -39,7 +39,7 @@ Question 2 is from Level 2
     - ft_strcmp ✅
     - ft_strcspn ✅
     - ft_strdup ✅
-    - ft_strpbrk
+    - ft_strpbrk 🛑
     - ft_strrev ✅
     - ft_strspn
     - inter
@@ -51,7 +51,7 @@ Question 2 is from Level 2
     - snake_to_camel
     - swap_bits ✅
     - union
-    - wdmatch 
+    - wdmatch 🛑
 
 Question 3 is from Level 3
 
@@ -77,7 +77,7 @@ Question 4 is from Level 4
 
 ❓ Any of the 10 Functions/Programs Below:
 
-    - flood_fill 🚷
+    - flood_fill
     - fprime ✅
     - ft_itoa
     - ft_list_foreach 🛑
@@ -86,7 +86,56 @@ Question 4 is from Level 4
     - rev_wstr ✅
     - rostring ✅
     - sort_int_tab 🛑
-    - sort_list 🛑
+    - sort_list
+
+lvl1 :
+// ulstr
+// rotone rot_13
+// repeat_alpha
+//ft_swap
+// ft_strlen
+//first_word
+//fizzbuzz
+// ft_strcpy
+//search_and_replace
+
+lvl2 :
+//camel_to_snake
+//ft_atoi
+//inter
+//print_bits
+//union
+//max
+//ft_strdup
+//do_op
+//swap_bits
+//ft_strcspn
+// alpha_mirror
+//last_word
+
+lvl3:
+//ft_atoi_base
+//pgcd
+//tab_mult
+//expand_str
+//str_capitalizer rstr_capitalizer
+//paramsum
+//epur_str
+//lcm
+//ft_list_size
+//add_prime_sum
+// ft_rrange ft_range
+//hidenp
+//print_hex
+
+lvl4:
+// ft_itoa
+//sort_list
+//rev_wstr
+//ft_split
+//flood_fill
+//fprime
+//rostring
 
 Stats
 
