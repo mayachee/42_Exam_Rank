@@ -24,7 +24,7 @@ Question 1 is from Level 1
     - repeat_alpha ✅
     - rev_print ✅ 
     - rot_13 ✅
-    - rotone
+    - rotone ✅
     - search_and_replace ✅
     - ulstr ✅
 
@@ -34,7 +34,7 @@ Question 2 is from Level 2
 
     - alpha_mirror ✅
     - camel_to_snake
-    - do_op
+    - do_op ✅
     - ft_atoi ✅
     - ft_strcmp ✅
     - ft_strcspn ✅
