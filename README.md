@@ -89,53 +89,57 @@ Question 4 is from Level 4
     - sort_list
 
 lvl1 :
-// ulstr
-// rotone rot_13
-// repeat_alpha
-//ft_swap
-// ft_strlen
-//first_word
-//fizzbuzz
-// ft_strcpy
-//search_and_replace
+
+    // ulstr
+    // rotone rot_13
+    // repeat_alpha
+    //ft_swap
+    // ft_strlen
+    //first_word
+    //fizzbuzz
+    // ft_strcpy
+    //search_and_replace
 
 lvl2 :
-//camel_to_snake
-//ft_atoi
-//inter
-//print_bits
-//union
-//max
-//ft_strdup
-//do_op
-//swap_bits
-//ft_strcspn
-// alpha_mirror
-//last_word
+
+    //camel_to_snake
+    //ft_atoi
+    //inter
+    //print_bits
+    //union
+    //max
+    //ft_strdup
+    //do_op
+    //swap_bits
+    //ft_strcspn
+    // alpha_mirror
+    //last_word
 
 lvl3:
-//ft_atoi_base
-//pgcd
-//tab_mult
-//expand_str
-//str_capitalizer rstr_capitalizer
-//paramsum
-//epur_str
-//lcm
-//ft_list_size
-//add_prime_sum
-// ft_rrange ft_range
-//hidenp
-//print_hex
+
+    //ft_atoi_base
+    //pgcd
+    //tab_mult
+    //expand_str
+    //str_capitalizer rstr_capitalizer
+    //paramsum
+    //epur_str
+    //lcm
+    //ft_list_size
+    //add_prime_sum
+    // ft_rrange ft_range
+    //hidenp
+    //print_hex
 
 lvl4:
-// ft_itoa
-//sort_list
-//rev_wstr
-//ft_split
-//flood_fill
-//fprime
-//rostring
+
+    // ft_itoa
+    //sort_list
+    //rev_wstr
+    //ft_split
+    //flood_fill
+    //fprime
+    //rostring
 
 Stats
 
