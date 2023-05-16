@@ -4,7 +4,7 @@ Allowed functions: malloc, free, realloc, write
 --------------------------------------------------------------------------------
 
 Write a program that takes a single string in lowerCamelCase format
-and converts it into a string in snake_case format.
+and converts it into as string in snake_case format.
 
 A lowerCamelCase string is a string where each word begins with a capital letter
 except for the first one.
