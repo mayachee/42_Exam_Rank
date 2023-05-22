@@ -90,27 +90,27 @@ Question 4 is from Level 4
 
 lvl1 :
 
-    // ulstr
-    // rotone rot_13
-    // repeat_alpha
-    //ft_swap
-    // ft_strlen
-    //first_word
-    //fizzbuzz
-    // ft_strcpy
-    //search_and_replace
+    // ulstr 
+    // rotone rot_13 ok
+    // repeat_alpha 
+    //ft_swap ok
+    // ft_strlen ok
+    //first_word ok
+    //fizzbuzz ok
+    // ft_strcpy ok
+    //search_and_replace ok
 
 lvl2 :
 
     //camel_to_snake
-    //ft_atoi
+    //ft_atoi ok
     //inter
     //print_bits
     //union
-    //max
-    //ft_strdup
+    //max ok
+    //ft_strdup 
     //do_op
-    //swap_bits
+    //swap_bits ok
     //ft_strcspn
     // alpha_mirror
     //last_word
@@ -127,19 +127,19 @@ lvl3:
     //lcm
     //ft_list_size
     //add_prime_sum
-    // ft_rrange ft_range
+    // ft_rrange ft_range ok
     //hidenp
-    //print_hex
+    //print_hex ok
 
 lvl4:
 
     // ft_itoa
     //sort_list
-    //rev_wstr
+    //rev_wstr ok
     //ft_split
     //flood_fill
-    //fprime
-    //rostring
+    //fprime ok
+    //rostring ok
 
 Stats
 
