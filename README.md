@@ -118,17 +118,17 @@ lvl2 :
 lvl3:
 
     //ft_atoi_base
-    //pgcd
+    //pgcd ok
     //tab_mult
-    //expand_str
-    //str_capitalizer rstr_capitalizer
+    //expand_str ok
+    //str_capitalizer rstr_capitalizer ok
     //paramsum
-    //epur_str
-    //lcm
+    //epur_str ok
+    //lcm ok
     //ft_list_size
     //add_prime_sum
     // ft_rrange ft_range ok
-    //hidenp
+    //hidenp ok
     //print_hex ok
 
 lvl4:
