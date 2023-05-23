@@ -102,17 +102,17 @@ lvl1 :
 
 lvl2 :
 
-    //camel_to_snake
+    //camel_to_snake ok
     //ft_atoi ok
     //inter
     //print_bits
     //union
     //max ok
-    //ft_strdup 
+    //ft_strdup ok
     //do_op
     //swap_bits ok
     //ft_strcspn
-    // alpha_mirror
+    // alpha_mirror ok
     //last_word
 
 lvl3:
