@@ -1,28 +1,36 @@
-#include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 
-int ft_atoi(char *nbr)
+int ft_atoi(char *av)
 {
     int i = 0;
-    int n = 0;
-    while ((nbr[i] >= '0' && nbr[i] <= '9') && nbr[i])
+    int nbr = 0;
+    while ((av[i] >= '0' && av[i] <= '9' )&& av[i])
     {
-        n = n * 10 + nbr[i] - '0';
+        nbr = nbr  * 10 + av[i] - '0';
         i++;
     }
-    return n;
+    return nbr;
 }
 
 void    ft_putstr(unsigned int	nbr)
+
+int add_prime_sum(int nbr)
 {
-    char i;
-    if (nbr >= 10)
+    int i = 3;
+
+    if (nbr <= 1 || (nbr % 2 == 0 && nbr > 2))
+		return 0;
+    else
     {
-        ft_putstr(nbr / 10);
-        ft_putstr(nbr % 10);
+        while (i < (nbr / 2))
+        {
+            if (nbr % i == 0)
+               return 0;
+            i+=2;
+        }
+        return 1;
     }
-    i = nbr + 48;
-    write(1, &(i), 1);
 }
 
 int    add_prime_sum(int nbr)
@@ -41,6 +49,21 @@ int    add_prime_sum(int nbr)
         i += 2;
     }
     return (0);
+}
+
+void ft_putnbr(int n)
+{
+    if (n < 0) {
+        write(STDOUT_FILENO, "-", 1);
+        n = -n;
+    }
+
+    if (n >= 10) {
+        ft_putnbr(n / 10);
+    }
+
+    char c = n % 10 + '0';
+    write(STDOUT_FILENO, &c, 1);
 }
 
 int main(int ac, char **av)
@@ -63,6 +86,17 @@ int main(int ac, char **av)
         }
         
     }
+    if (ac == 2)
+    {
+    int nb = ft_atoi(av[1]);
+    int sum = 0;
+		while (nb > 0)
+			if (add_prime_sum(nb--))
+				sum += (nb + 1);
+		ft_putnbr(sum);
+	}
+    	if (ac != 2)
+		ft_putnbr(0);
     write(1, "\n", 1);
     return 0;
 }
