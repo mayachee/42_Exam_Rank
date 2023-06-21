@@ -1,4 +1,5 @@
-# vorbreitung_zu_prufung
+
+# Exam Rank 2
 
 Exam Details
 
@@ -21,72 +22,125 @@ Question 1 is from Level 1
     - ft_strlen ✅
     - ft_swap ✅
     - putstr ✅
-    - repeat_alpha
-    - rev_print
+    - repeat_alpha ✅
+    - rev_print ✅ 
     - rot_13 ✅
-    - rotone
+    - rotone ✅
     - search_and_replace ✅
-    - ulstr
+    - ulstr ✅
 
 Question 2 is from Level 2
 
 ❓ Any of the 20 Functions/Programs Below:
 
     - alpha_mirror ✅
-    - camel_to_snake
-    - do_op
+    - camel_to_snake ✅
+    - do_op ✅
     - ft_atoi ✅
     - ft_strcmp ✅
-    - ft_strcspn
-    - ft_strdup
-    - ft_strpbrk
+    - ft_strcspn ✅
+    - ft_strdup ✅
+    - ft_strpbrk 🛑
     - ft_strrev ✅
     - ft_strspn
-    - inter
+    - inter ✅
     - is_power_of_2 ✅
     - last_word ✅
     - max ✅
-    - print_bits
+    - print_bits ✅
     - reverse_bits
-    - snake_to_camel
+    - snake_to_camel ✅
     - swap_bits ✅
-    - union
-    - wdmatch 
+    - union ✅
+    - wdmatch 🛑
 
 Question 3 is from Level 3
 
 ❓ Any of the 15 Functions/Programs Below:
 
     - add_prime_sum
-    - epur_str
-    - expand_str
-    - ft_atoi_base
+    - epur_str ✅
+    - expand_str ✅
+    - ft_atoi_base ✅
     - ft_list_size
-    - ft_range
-    - ft_rrange
-    - hidenp
-    - lcm
-    - paramsum
-    - pgcd
-    - print_hex
+    - ft_range ♻️
+    - ft_rrange ✅
+    - hidenp ✅ 
+    - lcm ✅
+    - paramsum ✅
+    - pgcd ✅
+    - print_hex ✅
     - rstr_capitalizer ✅
-    - str_capitalizer
+    - str_capitalizer ✅
     - tab_mult 
 
 Question 4 is from Level 4
 
 ❓ Any of the 10 Functions/Programs Below:
 
-    - flood_fill 🚷
+    - flood_fill
     - fprime ✅
-    - ft_itoa
+    - ft_itoa ✅
     - ft_list_foreach 🛑
     - ft_list_remove_if 🛑
     - ft_split
     - rev_wstr ✅
     - rostring ✅
     - sort_int_tab 🛑
-    - sort_list 🛑
+    - sort_list
+
+lvl1 :
+
+    // ulstr 
+    // rotone rot_13 ok
+    // repeat_alpha 
+    //ft_swap ok
+    // ft_strlen ok
+    //first_word ok
+    //fizzbuzz ok
+    // ft_strcpy ok
+    //search_and_replace ok
+
+lvl2 :
+
+    //camel_to_snake ok
+    //ft_atoi ok
+    //inter
+    //print_bits
+    //union
+    //max ok
+    //ft_strdup ok
+    //do_op
+    //swap_bits ok
+    //ft_strcspn
+    // alpha_mirror ok
+    //last_word
+
+lvl3:
+
+    //ft_atoi_base
+    //pgcd ok
+    //tab_mult
+    //expand_str ok
+    //str_capitalizer rstr_capitalizer ok
+    //paramsum
+    //epur_str ok
+    //lcm ok
+    //ft_list_size
+    //add_prime_sum
+    // ft_rrange ft_range ok
+    //hidenp ok
+    //print_hex ok
+
+lvl4:
+
+    // ft_itoa
+    //sort_list
+    //rev_wstr ok
+    //ft_split
+    //flood_fill
+    //fprime ok
+    //rostring ok
 
 Stats
 
