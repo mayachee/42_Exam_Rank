@@ -56,8 +56,8 @@ int main(int argc, char **argv, char **envp)
                 i++;
             if (!strcmp(*argv, "cd"))
                 status = cd(argv, i);
-            else if (i)
-                status = exec(argv, envp, i);
+            // else if (i)
+            //     status = exec(argv, envp, i);
         }
     }
     return status;

@@ -3,13 +3,13 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int print_fd(char *message, char *data, int fd)
+int print_fd(char *message, char *data)
 {
     int i;
     i = 0;
     while (message[i])
     {
-        write(fd, &message[i], sizeof(message[i]));
+        write(2 , &message[i], 1);
         i++;
     }
     if (data)
@@ -17,20 +17,20 @@ int print_fd(char *message, char *data, int fd)
         i = 0;
         while (data[i])
         {
-            write(fd, &data[i], sizeof(data[i]));
+            write(2 , &data[i], 1);
             i++;
         }
     }
-    write(fd, "\n", 1);
+    write(2 , "\n", 1);
     return (1);
 }
 
 void exec_cd(char **argv, int j)
 {
     if (j != 2)
-        print_fd("error: cd: bad arguments", 0, 2);
+        print_fd("error: cd: bad arguments", 0);
     else if (chdir(argv[1]) == -1)
-        print_fd("error: cd: cannot change directory to ", argv[1], 2);
+        print_fd("error: cd: cannot change directory to ", argv[1]);
 }
 
 void exec_cmd(char **argv, char **env, int j)
@@ -40,9 +40,9 @@ void exec_cmd(char **argv, char **env, int j)
     int status;
     int has_pipe = (argv[j]) && (strcmp(argv[j], "|") == 0);
 
-    if ((has_pipe) && (pipe(fd) == -1)) // error
+    if ((has_pipe) && (pipe(fd) == -1))
     {
-        print_fd("error: fatal", 0, 2);
+        print_fd("error: fatal", 0);
         return;
     }
     pid = fork();
@@ -52,17 +52,17 @@ void exec_cmd(char **argv, char **env, int j)
         if (has_pipe &&
             (dup2(fd[1], 1) == -1 || close(fd[0]) == -1 || close(fd[1]) == -1))
         {
-            print_fd("error: fatal", 0, 2);
+            print_fd("error: fatal", 0);
             return;
         }
         execve(*argv, argv, env);
-        print_fd("error: cannot execute ", argv[0], 2);
+        print_fd("error: cannot execute ", argv[0]);
         return;
     }
     waitpid(pid, &status, 0);
     if (has_pipe &&
             (dup2(fd[0], 0) == -1 || close(fd[0]) == -1 || close(fd[1]) == -1))
-        print_fd("error: fatal", NULL, 2);
+        print_fd("error: fatal", NULL);
 }
 
 int main(int argc, char *argv[], char **env)
