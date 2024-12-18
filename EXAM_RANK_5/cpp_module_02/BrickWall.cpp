@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   BrickWall.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mayache- <mayache-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 10:49:27 by mayache-          #+#    #+#             */
-/*   Updated: 2024/12/18 01:21:38 by mayache-         ###   ########.fr       */
+/*   Created: 2024/12/18 01:50:14 by mayache-          #+#    #+#             */
+/*   Updated: 2024/12/18 01:53:23 by mayache-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Warlock.hpp"
-#include "ASpell.hpp"
-#include "ATarget.hpp"
-#include "Fwoosh.hpp"
-#include "Dummy.hpp"
+#pragma once
+#include "BrickWall.hpp"
 
+BrickWall::BrickWall() : ATarget("Inconspicuous Red-brick Wall")
+{}
 
-int main()
+BrickWall::~BrickWall() {}
+
+ATarget* BrickWall::clone() const
 {
-  Warlock richard("Richard", "the Titled");
-
-  Dummy bob;
-  Fwoosh* fwoosh = new Fwoosh();
-
-  richard.learnSpell(fwoosh);
-
-  richard.introduce();
-  richard.launchSpell("Fwoosh", bob);
-
-  // richard.forgetSpell("Fwoosh");
-  // richard.launchSpell("Fwoosh", bob);
+    return (new BrickWall());
 }

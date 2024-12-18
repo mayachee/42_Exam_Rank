@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Fireball.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mayache- <mayache-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 10:49:27 by mayache-          #+#    #+#             */
-/*   Updated: 2024/12/18 01:21:38 by mayache-         ###   ########.fr       */
+/*   Created: 2024/12/18 01:29:14 by mayache-          #+#    #+#             */
+/*   Updated: 2024/12/18 01:45:02 by mayache-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Warlock.hpp"
+#pragma once
 #include "ASpell.hpp"
-#include "ATarget.hpp"
-#include "Fwoosh.hpp"
-#include "Dummy.hpp"
 
-
-int main()
+class Fireball : public ASpell
 {
-  Warlock richard("Richard", "the Titled");
+    public:
+        Fireball();
+        ~Fireball();
 
-  Dummy bob;
-  Fwoosh* fwoosh = new Fwoosh();
+        ASpell * clone() const;
+};
 
-  richard.learnSpell(fwoosh);
 
-  richard.introduce();
-  richard.launchSpell("Fwoosh", bob);
-
-  // richard.forgetSpell("Fwoosh");
-  // richard.launchSpell("Fwoosh", bob);
-}

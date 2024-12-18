@@ -1,40 +1,22 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ASpell.hpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mayache- <mayache-@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/10 15:28:12 by mayache-          #+#    #+#             */
-/*   Updated: 2024/12/12 12:49:05 by mayache-         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #pragma once
 #include <iostream>
 #include "ATarget.hpp"
 
 class ATarget;
 
-class ASpell
+class ASpell 
 {
-    protected:
-        std::string name;
-        std::string effects;
-
-    public:
-        std::string const & getName() const;
-        std::string const & getEffects() const;
-
-        // Also add a clone pure method that returns 
-        // a pointer to ASpell.
-        virtual ASpell * clone() const = 0;
-    
-        ASpell(ASpell &obj);
-        ASpell &operator=(ASpell const & str);
-        ASpell();
-        ASpell(std::string const & name, std::string const & effects);
-        virtual ~ASpell();
-
-        void launch(ATarget const & target) const;
+	protected :
+		std::string _name;
+		std::string _effects;
+	
+	public :
+		ASpell(std::string name, std::string effects);
+		ASpell & operator=(ASpell const & rhs);
+		ASpell(ASpell const & obj);
+		virtual ~ASpell();
+		std::string getName() const;
+		std::string getEffects() const;
+		virtual ASpell* clone() const = 0;
+		void launch(ATarget const & target) const;
 };

@@ -1,57 +1,39 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ASpell.cpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mayache- <mayache-@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/10 15:28:00 by mayache-          #+#    #+#             */
-/*   Updated: 2024/12/12 12:29:35 by mayache-         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "ASpell.hpp"
 
-std::string const & ASpell::getName() const
+ASpell::ASpell(std::string name,
+     std::string effects) : _name(name), _effects(effects)
 {
-    return (name);
+
 }
 
-std::string const & ASpell::getEffects() const
+ASpell & ASpell::operator=(ASpell const & rhs)
 {
-    return (effects);
+	_name = rhs.getName();
+	_effects = rhs.getEffects();
+	return *this;
 }
 
-
-ASpell::ASpell(ASpell &obj)
+ASpell::ASpell(ASpell const & obj)
 {
-    *this = obj;
-}
-
-ASpell & ASpell::operator=(ASpell const & str)
-{
-    name = str.name;
-    effects = str.effects;
-
-    return (*this);   
-}
-
-ASpell::ASpell()
-{
-    
-}
-
-ASpell::ASpell(std::string const & name, std::string const & effects) : name(name), effects(effects)
-{
-    
+	*this = obj;
 }
 
 ASpell::~ASpell()
 {
-    
+
+}
+
+std::string ASpell::getName() const
+{
+	return (_name);
+}
+
+std::string ASpell::getEffects() const
+{
+	return (_effects);
 }
 
 void ASpell::launch(ATarget const & target) const
 {
-    target.getHitBySpell(*this); 
+	target.getHitBySpell(*this);
 }

@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Polymorph.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mayache- <mayache-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 10:49:27 by mayache-          #+#    #+#             */
-/*   Updated: 2024/12/18 01:21:38 by mayache-         ###   ########.fr       */
+/*   Created: 2024/12/18 01:35:50 by mayache-          #+#    #+#             */
+/*   Updated: 2024/12/18 01:45:04 by mayache-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Warlock.hpp"
+#pragma once
 #include "ASpell.hpp"
-#include "ATarget.hpp"
-#include "Fwoosh.hpp"
-#include "Dummy.hpp"
 
-
-int main()
+class Polymorph : public ASpell
 {
-  Warlock richard("Richard", "the Titled");
+    public:
+        Polymorph();
+        ~Polymorph();
 
-  Dummy bob;
-  Fwoosh* fwoosh = new Fwoosh();
-
-  richard.learnSpell(fwoosh);
-
-  richard.introduce();
-  richard.launchSpell("Fwoosh", bob);
-
-  // richard.forgetSpell("Fwoosh");
-  // richard.launchSpell("Fwoosh", bob);
-}
+        ASpell * clone() const;
+};

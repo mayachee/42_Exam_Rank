@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   BrickWall.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mayache- <mayache-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 10:49:27 by mayache-          #+#    #+#             */
-/*   Updated: 2024/12/18 01:21:38 by mayache-         ###   ########.fr       */
+/*   Created: 2024/12/18 01:47:26 by mayache-          #+#    #+#             */
+/*   Updated: 2024/12/18 01:52:22 by mayache-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Warlock.hpp"
-#include "ASpell.hpp"
+
+
+// In addition to this, just so he won't have only 
+// dummy to attack, let's make a
+// new target for him, which will be 
+//the BrickWall (Type: "Inconspicuous Red-brick Wall").
+
 #include "ATarget.hpp"
-#include "Fwoosh.hpp"
-#include "Dummy.hpp"
 
-
-int main()
+class BrickWall : public ATarget
 {
-  Warlock richard("Richard", "the Titled");
+    public:
+        BrickWall();
+        ~BrickWall();
 
-  Dummy bob;
-  Fwoosh* fwoosh = new Fwoosh();
-
-  richard.learnSpell(fwoosh);
-
-  richard.introduce();
-  richard.launchSpell("Fwoosh", bob);
-
-  // richard.forgetSpell("Fwoosh");
-  // richard.launchSpell("Fwoosh", bob);
-}
+        ATarget* clone() const;
+};
