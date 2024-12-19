@@ -22,14 +22,6 @@
 // Fwoosh,
 //  it will return a pointer to a new Fwoosh object.
 
-// class Fwoosh : public ASpell
-// {
-//     public:
-//         Fwoosh();
-//         ~Fwoosh();
-//         ASpell * clone() const;
-// };
-
 class Fwoosh : public ASpell
 {
 	public :

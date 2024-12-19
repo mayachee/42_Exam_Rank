@@ -23,8 +23,8 @@ class ASpell
         std::string effects;
 
     public:
-        std::string const & getName() const;
-        std::string const & getEffects() const;
+        std::string getName() const;
+        std::string getEffects() const;
 
         // Also add a clone pure method that returns 
         // a pointer to ASpell.
@@ -33,7 +33,7 @@ class ASpell
         ASpell(ASpell &obj);
         ASpell &operator=(ASpell const & str);
         ASpell();
-        ASpell(std::string const & name, std::string const & effects);
+        ASpell(std::string name, std::string effects);
         virtual ~ASpell();
 
         void launch(ATarget const & target) const;

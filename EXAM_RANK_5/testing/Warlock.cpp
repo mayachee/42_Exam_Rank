@@ -29,6 +29,10 @@ Warlock::Warlock()
 Warlock::~Warlock()
 {
     std::cout << name << ": My job here is done!" << std::endl;
+	// for (std::map<std::string, ASpell*>::iterator it = spellbook.begin(); it != spellbook.end(); ++it) {
+	// 	delete it->second;
+	// }
+	// spellbook.clear();
 }
 
 Warlock::Warlock(Warlock const & obj)
@@ -47,10 +51,6 @@ Warlock & Warlock::operator=(Warlock const & str)
 Warlock::Warlock(std::string const & name, std::string const & title) : name(name), title(title)
 {
     std::cout << name << ": This looks like another boring day." << std::endl;
-	for (std::map<std::string, ASpell*>::iterator it = spellbook.begin(); it != spellbook.end(); ++it) {
-		delete it->second;
-	}
-	spellbook.clear();
 }
 
 
@@ -68,29 +68,17 @@ void Warlock::introduce() const
 //  that makes the Warlock learn a spell
 void Warlock::learnSpell(ASpell * spell)
 {
-    if (spell)
-    {
-        if (spellbook.find(spell->getName()) ==
-            spellbook.end())
-        spellbook[spell->getName()] = spell->clone();
-    }
+    spellbook.learnSpell(spell);
 }
 void Warlock::forgetSpell(std::string namespell)
 {
-    if (spellbook.find(namespell) !=
-        spellbook.end())
-        {
-            delete spellbook[namespell];
-            spellbook.erase(namespell);
-            
-        }
+    spellbook.forgetSpell(namespell);
 }
 
 void Warlock::launchSpell(std::string namespell, ATarget const & target)
 {
-    if (spellbook.find(namespell) !=
-        spellbook.end())
+    if (spellbook.createSpell(namespell))
     {
-        spellbook[namespell]->launch(target);
+        spellbook.createSpell(namespell)->launch(target);
     }
 }

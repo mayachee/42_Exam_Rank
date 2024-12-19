@@ -54,6 +54,10 @@ Warlock::Warlock(std::string const & name, std::string const & title) : name(nam
 Warlock::~Warlock()
 {
     std::cout << name << ": My job here is done!" << std::endl;
+    	for (std::map<std::string, ASpell*>::iterator it = spellbook.begin(); it != spellbook.end(); ++it) {
+		delete it->second;
+	}
+	spellbook.clear();
 }
 
 void Warlock::introduce() const

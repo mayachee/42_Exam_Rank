@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include <iostream>
 #include <map>
 #include "ASpell.hpp"
+#include "SpellBook.hpp"
 
 class Warlock
 {
@@ -22,8 +24,7 @@ class Warlock
         Warlock();
         std::string name;
         std::string title;
-
-        std::map<std::string, ASpell *> spellbook;
+        SpellBook spellbook;
         
     public:
         std::string const & getName() const;

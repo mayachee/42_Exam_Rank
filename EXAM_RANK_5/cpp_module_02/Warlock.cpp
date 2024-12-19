@@ -24,10 +24,10 @@ Warlock::Warlock(Warlock const & obj)
 Warlock::~Warlock()
 {
 	std::cout << _name << ": My job here is done!" << std::endl;
-	for (std::map<std::string, ASpell*>::iterator it = _SpellBook.begin(); it != _SpellBook.end(); ++it) {
-		delete it->second;
-	}
-	_SpellBook.clear();
+	// for (std::map<std::string, ASpell*>::iterator it = _SpellBook.begin(); it != _SpellBook.end(); ++it) {
+	// 	delete it->second;
+	// }
+	// _SpellBook.clear();
 }
 
 std::string const & Warlock::getName() const
