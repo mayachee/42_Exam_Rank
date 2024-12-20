@@ -1,21 +1,23 @@
+
 #pragma once
 #include <iostream>
 #include "ASpell.hpp"
 
 class ASpell;
 
-class ATarget 
+class ATarget
 {
-	protected :
-		std::string _type;
-	
-	public :
-		ATarget(std::string type);
-		ATarget & operator=(ATarget const & rhs);
-		ATarget(ATarget const & obj);
-		virtual ~ATarget();
-		std::string getType() const;
-		virtual ATarget* clone() const = 0;
-		void	getHitBySpell(ASpell const & spell) const;
-};
+    protected:
+        std::string type;
 
+    public:
+        std::string  getType() const;
+
+        ATarget(ATarget const & str);
+        ATarget & operator=(ATarget const & str);
+        ATarget(std::string type);
+        virtual ~ATarget();
+        virtual ATarget * clone() const = 0;
+
+        void getHitBySpell(ASpell const & spell) const;
+};
