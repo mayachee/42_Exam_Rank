@@ -8,6 +8,7 @@ void TargetGenerator::learnTargetType(ATarget *target)
     }
 
 }
+
 void TargetGenerator::forgetTargetType(std::string const &type)
 {
     if (_target.find(type) !=
@@ -16,6 +17,7 @@ void TargetGenerator::forgetTargetType(std::string const &type)
         _target.erase(_target.find(type));
     }   
 }
+
 ATarget* TargetGenerator::createTarget(std::string const &type)
 {
     ATarget *tmp = NULL;
@@ -31,6 +33,7 @@ TargetGenerator::TargetGenerator()
 {
 
 }
+
 TargetGenerator::~TargetGenerator()
 {
 
