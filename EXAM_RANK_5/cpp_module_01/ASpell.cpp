@@ -22,7 +22,6 @@ std::string ASpell::getEffects() const
     return (effects);
 }
 
-
 ASpell::ASpell(ASpell &obj)
 {
     *this = obj;
@@ -32,7 +31,6 @@ ASpell & ASpell::operator=(ASpell const & str)
 {
     name = str.getName();
     effects = str.getEffects();
-
 
     return (*this);   
 }
