@@ -4,7 +4,18 @@
 class BrickWall : public ATarget
 {
     public:
-        BrickWall();
-        ~BrickWall();
-        ATarget * clone() const;
+        BrickWall() : ATarget("Inconspicuous Red-brick Wall")
+        {
+
+        }
+
+        ~BrickWall()
+        {
+
+        }
+
+        ATarget * clone() const
+        {
+            return (new BrickWall());
+        }
 };
