@@ -13,7 +13,6 @@ class ATarget{
 
         void getHitBySpell(ASpell const & as) const;
 
-
         std::string getType() const
         {
             return (type);

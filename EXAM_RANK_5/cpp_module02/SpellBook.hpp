@@ -54,7 +54,7 @@ class SpellBook
             if (spellbook.find(spellname) != spellbook.end() )
             {
                 spell = spellbook[spellname];
-            }  
+            } 
             return (spell);
         }
 
@@ -63,5 +63,4 @@ class SpellBook
 
         ~SpellBook()
         {}
-
 };

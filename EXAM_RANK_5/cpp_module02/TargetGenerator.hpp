@@ -36,7 +36,6 @@ class TargetGenerator
             {
                 _target.erase(_target.find(type));
             }  
-
         }
 
         ATarget* createTarget(std::string const &type)

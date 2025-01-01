@@ -58,6 +58,8 @@
         "streambuf": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "__config": "cpp"
+        "__config": "cpp",
+        "ctime": "cpp",
+        "iomanip": "cpp"
     }
 }

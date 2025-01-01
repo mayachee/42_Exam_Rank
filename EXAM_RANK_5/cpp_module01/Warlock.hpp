@@ -61,29 +61,29 @@ class Warlock
             std::cout << name << ": I am " << name << ", " << title << "!" << std::endl;
         }
 
-    void learnSpell(ASpell * spell)
-    {
-        if (spell)
+        void learnSpell(ASpell * spell)
         {
-            if (spellbook.find(spell->getName()) ==
-                spellbook.end())
+            if (spell)
             {
-                spellbook[spell->getName()] = spell->clone();
+                if (spellbook.find(spell->getName()) ==
+                    spellbook.end())
+                {
+                    spellbook[spell->getName()] = spell->clone();
+                }
             }
         }
-    }
 
-    void forgetSpell(std::string namespell)
-    {
-        spellbook.erase(namespell);
-    }
+        void forgetSpell(std::string namespell)
+        {
+            spellbook.erase(namespell);
+        }
 
-    void launchSpell(std::string spellname, ATarget const & target)
-{
-    if (spellbook.find(spellname) != spellbook.end())
-    {
-        spellbook[spellname]->launch(target);
-    }
-}
+        void launchSpell(std::string spellname, ATarget const & target)
+        {
+            if (spellbook.find(spellname) != spellbook.end())
+            {
+                spellbook[spellname]->launch(target);
+            }
+        }
 
 };
