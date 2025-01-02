@@ -2,7 +2,7 @@
 #include <iostream>
 #include "ASpell.hpp"
 #include "ATarget.hpp"
-#include <map>
+#include "SpellBook.hpp"
 
 class Warlock
 {
@@ -26,7 +26,7 @@ class Warlock
         std::string name;
         std::string title;
 
-        std::map<std::string, ASpell * > spellbook;
+        SpellBook spellbook;
 
 
     public:
@@ -63,26 +63,17 @@ class Warlock
 
         void learnSpell(ASpell * spell)
         {
-            if (spell)
-            {
-                if (spellbook.find(spell->getName()) ==
-                    spellbook.end())
-                {
-                    spellbook[spell->getName()] = spell->clone();
-                }
-            }
+            spellbook.learnSpell(spell);
         }
 
         void forgetSpell(std::string namespell)
         {
-            spellbook.erase(namespell);
+            spellbook.forgetSpell(namespell);
         }
 
         void launchSpell(std::string spellname, ATarget const & target)
         {
-            if (spellbook.find(spellname) != spellbook.end())
-            {
-                spellbook[spellname]->launch(target);
-            }
+            if (spellbook.createSpell(spellname))
+		        spellbook.createSpell(spellname)->launch(target);
         }
 };
